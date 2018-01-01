@@ -2,5 +2,5 @@
 (fetcher git)
 
 (clean (rmfile "htmlize.elc"))
-(compile (byte-compile :files ("htmlize.elc")))
+(compile (byte-compile :files ("htmlize.el")))
 (install (copy :what ("htmlize.elc" "htmlize.el.html")))
