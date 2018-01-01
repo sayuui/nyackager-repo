@@ -1,6 +1,0 @@
-(uri "https://github.com/sayuui/f.el")
-(fetcher git)
-
-(clean (rmfile "f.elc"))
-(compile (byte-compile :files ("f.el")))
-(install (copy :what ("f.el")))

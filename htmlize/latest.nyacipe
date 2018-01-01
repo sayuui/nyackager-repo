@@ -1,0 +1,6 @@
+(uri "https://github.com/sayuui/emacs-htmlize")
+(fetcher git)
+
+(clean (rmfile "htmlize.elc"))
+(compile (byte-compile :files ("htmlize.elc")))
+(install (copy :what ("htmlize.elc" "htmlize.el.html")))
