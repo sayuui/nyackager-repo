@@ -1,0 +1,9 @@
+(uri "https://github.com/sayuui/dash.el")
+(fetcher git)
+
+(clean (rmfile "dash.elc")
+       (rmfile "dash-functional.elc"))
+(compile (byte-compile :files ("dash.el"
+                               "dash-functional.el")))
+(install (copy :what ("dash.elc"
+                      "dash-functional.elc")))
