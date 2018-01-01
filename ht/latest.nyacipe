@@ -1,7 +1,7 @@
 (uri "https://github.com/sayuui/ht.el")
 (fetcher git)
 
-(dependencies ((:name "dash")))
+(dependencies (:name "dash"))
 
 (clean (rmfile "ht.elc"))
 (compile (byte-compile :files ("ht.el")))
