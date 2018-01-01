@@ -1,0 +1,9 @@
+(uri "https://github.com/sayuui/emacs-state-machine")
+(fetcher git)
+
+(clean (rmfile "state-machine--state.elc")
+       (rmfile "state-machine.elc"))
+(compile (byte-compile :files ("state-machine--state.el"
+                               "state-machine.el")))
+(install (copy :what ("state-machine--state.elc"
+                      "state-machine.elc")))
